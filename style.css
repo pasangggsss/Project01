@@ -20,7 +20,7 @@ ul a{
 	padding-left: 20px;
 	padding-right:25px;	
 	border: 2px solid white;
-	transition: 1s;
+	transition: 1s ease;
 }
 
 ul a:hover{
@@ -42,14 +42,50 @@ ul .active a{
 	height:50px; 
 	width: 40%;
     float: left;
-    animation-name: example;
 
 }
+.photo{
 
-@keyframes example {
-
+	height:400px;
+	width:500px;
+	margin-top:150px;
+	margin-left:720px;
+	padding:20px;
+	opacity:70%;
 }
+
 
 .fin{
 	margin-left:40px;
 }
+/*The End for home page*/
+/*The start of Portfolio page*/
+
+/*The End For Portfolio Page.*/
+/*The start of Contact page*/
+.insane{
+	float:left;
+	width:300px;
+	margin-top:120px;
+	margin-left: 30px; 
+}
+.photo1{
+	height:400px;
+	width:360px;
+	margin-top: 120px;
+	margin-left: 500px;
+	padding:30px;
+	opacity:70%;
+
+}
+/*The start of CV page*/
+/*The end of CV page**/
+/*The start of site report*/
+/*The End of site report*/
+
+
+
+
+
+
+
