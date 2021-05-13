@@ -1,0 +1,55 @@
+body{
+	margin:0px;
+	padding:0px;
+	height: 700px;
+	background-position: center;
+	background-image: linear-gradient(white 30%,#22E8F9)    
+}	
+
+ul  {
+	display: inline-block;
+	float:right;
+	padding-top:20px;
+
+}
+
+ul a{
+	background-color:white;
+	text-decoration: none;
+	color:black;
+	padding-left: 20px;
+	padding-right:25px;	
+	border: 2px solid white;
+	transition: 1s;
+}
+
+ul a:hover{
+	color: blue;
+}
+
+ul .active a{
+	background-color: #fff ;
+	color: #000;
+}
+
+.title{
+	background-image: linear-gradient(red,black) 
+	background-color:white;
+	text-align: center;
+	color: black;
+	margin-top: 30px
+	font-size:50px;
+	height:50px; 
+	width: 40%;
+    float: left;
+    animation-name: example;
+
+}
+
+@keyframes example {
+
+}
+
+.fin{
+	margin-left:40px;
+}
