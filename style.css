@@ -3,12 +3,12 @@ body{
 	padding:0px;
 	height: 700px;
 	background-position: center;
-	background-image: linear-gradient(white 30%,#22E8F9)    
+	background-image: linear-gradient(white 30%,#22E8F9)   
 }	
 
-ul  {
-	display: inline-block;
-	float:right;
+ul  {                                            /*This one is for the navigation bar.*/
+	display: inline-block;                       
+	float:right;                                  
 	padding-top:20px;
 
 }
@@ -19,7 +19,6 @@ ul a{
 	color:black;
 	padding-left: 20px;
 	padding-right:25px;	
-	border: 2px solid white;
 	transition: 1s ease;
 }
 
@@ -32,7 +31,7 @@ ul .active a{
 	color: #000;
 }
 
-.title{
+.title{                                              /* This ones for the title PASANGGGSSS CREATION.*/                                               
 	background-image: linear-gradient(red,black) 
 	background-color:white;
 	text-align: center;
@@ -44,7 +43,7 @@ ul .active a{
     float: left;
 
 }
-.photo{
+.photo{                                            /*This one if for */
 
 	height:400px;
 	width:500px;
@@ -61,26 +60,92 @@ ul .active a{
 /*The End for home page*/
 /*The start of Portfolio page*/
 
+
+
+
 /*The End For Portfolio Page.*/
 /*The start of Contact page*/
-.insane{
+.insane{                                     /**/
 	float:left;
 	width:300px;
-	margin-top:120px;
+	margin-top:70px;
 	margin-left: 30px; 
 }
-.photo1{
+.photo1{                                       /* This one is for photo inside the contact.html page.*/
 	height:400px;
 	width:360px;
 	margin-top: 120px;
 	margin-left: 500px;
 	padding:30px;
-	opacity:70%;
+	opacity:65%;
 
 }
 /*The start of CV page*/
+.cv{                       /*this one is for photo inside CV*/
+	height:200px;
+	width: 200px;
+	margin-top: 100px;
+	margin-left:500px;
+	clip-path:circle();
+}
+.win{                    /*div of the Name,About me and Bio*/
+	margin-left: 480px;
+	padding-bottom:280px;
+    font-size:30px;
+	
+}
+.in{                /*for aboutme and bio*/
+	width:300px;
+	background-color:#34E9F3;
+    color:black;
+	border:3px solid black;
+	border-radius:20px 20px;
+	padding-left:20px;
+	padding-right:20px;
+	animation-name:edit;
+	animation duration: 2sec;
+
+}
+    @keyframes edit{
+    	0% { background-color:#34E9F3; }
+    	100%{background-color:orange;}
+
+  }
+
+/*.in:hover{
+      color:blue;
+}
+*/
+
+  /*css for about.html inside CV page*/
+ .all{                            /*this css is for aboutme*/
+ 	float:left;
+ 	margin-top:60px;
+ 	padding-left:30px;
+ 	width:55%;
+ 	height:400px;
+ } 
+ .null{                          /*this css is for Education*/
+ 	 float:right;
+ 	width:38%;
+ 	height:200px;
+ 	margin-top:60px;
+
+ }
+ .fall{                         /*this css is for Contact details*/
+ 	margin-top:70px;
+ 	padding-right:200px;
+ 	padding-left:30px;
+ }
 /*The end of CV page**/
 /*The start of site report*/
+
+
+
+
+
+
+
 /*The End of site report*/
 
 
