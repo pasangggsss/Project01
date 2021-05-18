@@ -1,15 +1,20 @@
+/*all website CSS*/
 body{
 	margin:0px;
 	padding:0px;
 	height: 700px;
-	background-position: center;
-	background-image: linear-gradient(white 30%,#22E8F9)   
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-image: linear-gradient(white 30%,#22E8F9);
+	overflow:hidden;
 }	
 
-ul  {                                            /*This one is for the navigation bar.*/
+ul {                                            /*This one is for the navigation bar.*/
 	display: inline-block;                       
-	float:right;                                  
-	padding-top:20px;
+	float:right;  
+	margin-top:-15px;                                
+	padding-top:10px;
 
 }
 
@@ -19,7 +24,7 @@ ul a{
 	color:black;
 	padding-left: 20px;
 	padding-right:25px;	
-	transition: 1s ease;
+	transition:1s ease;
 }
 
 ul a:hover{
@@ -27,43 +32,56 @@ ul a:hover{
 }
 
 ul .active a{
-	background-color: #fff ;
-	color: #000;
-}
-
-.title{                                              /* This ones for the title PASANGGGSSS CREATION.*/                                               
-	background-image: linear-gradient(red,black) 
-	background-color:white;
-	text-align: center;
+	background-color: white ;
 	color: black;
-	margin-top: 30px
-	font-size:50px;
-	height:50px; 
-	width: 40%;
-    float: left;
-
 }
-.photo{                                            /*This one if for */
-
-	height:400px;
-	width:500px;
-	margin-top:150px;
-	margin-left:720px;
-	padding:20px;
-	opacity:70%;
-}
-
-
 .fin{
 	margin-left:40px;
 }
+/* all pages CSS*/
+
+
+/*the start of home page.*/
+
+.lin{
+	margin-left:94px;
+	font-size:30px;
+}
+.aaa{                   /*for the text student in home page*/
+	padding-left:10px;
+	font-size:20px;
+	padding-bottom:30px;
+}
+
+.phuto{
+	height:150px;
+	width: 150px;
+	margin-top: 100px;
+	margin-left:111px;
+	clip-path:circle();
+}
+
 /*The End for home page*/
+
+
+
+
+
+
+
+
+
+
 /*The start of Portfolio page*/
 
 
 
 
 /*The End For Portfolio Page.*/
+
+
+
+
 /*The start of Contact page*/
 .insane{                                     /**/
 	float:left;
@@ -80,64 +98,110 @@ ul .active a{
 	opacity:65%;
 
 }
+/*The END of contact page*/
+
+
+
+
+
+
 /*The start of CV page*/
-.cv{                       /*this one is for photo inside CV*/
-	height:200px;
-	width: 200px;
-	margin-top: 100px;
-	margin-left:500px;
-	clip-path:circle();
-}
-.win{                    /*div of the Name,About me and Bio*/
-	margin-left: 480px;
-	padding-bottom:280px;
-    font-size:30px;
-	
-}
-.in{                /*for aboutme and bio*/
-	width:300px;
-	background-color:#34E9F3;
-    color:black;
-	border:3px solid black;
-	border-radius:20px 20px;
-	padding-left:20px;
-	padding-right:20px;
-	animation-name:edit;
-	animation duration: 2sec;
+
+.pgg{                            /*this one for the main div*/
+	display:grid;
+	grid-template-columns:auto auto ;
+	margin-top:60px;
+	margin-left:70px;
+	margin-right:30px;
+	grid-gap:10px;
+} 
+.pgh{                              /*This one s for Aboutme */
+	border:2px solid black;
+	text-align:center;
 
 }
-    @keyframes edit{
-    	0% { background-color:#34E9F3; }
-    	100%{background-color:orange;}
 
-  }
 
-/*.in:hover{
-      color:blue;
+.about{                       /*this one is for photo inside CV*/
+    width:245px;
+    height:230px;
+	border:2px solid black;
+
 }
-*/
 
-  /*css for about.html inside CV page*/
- .all{                            /*this css is for aboutme*/
+.phh{                        /*This one is for the contact details*/
+	border:2px solid black;
+}
+.pjh{                        /*This one if for the education */
+	border:2px solid black;
+	display:flex;
+
+}
+.pjh h2{
+	margin-right:25px;
+}
+
+.pkh{                /*This one is for Skills*/
+	height:111px;
+	margin-top:10px;
+	margin-left:70px;
+	margin-right:30px;
+	border:2px solid black;
+	display:flex;
+}
+ .range{
+ 	margin-top:50px;
+ 	margin-left:50px;
  	float:left;
- 	margin-top:60px;
- 	padding-left:30px;
- 	width:55%;
- 	height:400px;
- } 
- .null{                          /*this css is for Education*/
- 	 float:right;
- 	width:38%;
- 	height:200px;
- 	margin-top:60px;
+ }
+
+
+/*The end of CV page**/
+
+
+
+
+
+
+
+
+
+
+ /* the CSS for  bio starts.*/
+ table{             /* for table inside the bio*/
+      margin-top:150px;
+      margin-left:390px;
+      border:3px solid black;
+      box-shadow:15px 15px;
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-left:10px;
+      padding-right:80px;
+ }
+ tr,td{                                   
+        border:2px solid black;
 
  }
- .fall{                         /*this css is for Contact details*/
- 	margin-top:70px;
- 	padding-right:200px;
- 	padding-left:30px;
+ .fff{
+ 	height:150px;
+ 	width:150px;
+ 	float:left;
+ 	margin-top:-490px;
+ 	margin-left:740px;
+ 	clip-path:circle();
+
  }
-/*The end of CV page**/
+
+ /*CSS for bio ends*/
+
+
+
+
+
+
+
+
+
 /*The start of site report*/
 
 
@@ -154,3 +218,38 @@ ul .active a{
 
 
 
+
+
+
+
+/*This one if for the hamburger menu*/
+.burger{                               
+	display:flex;
+	flex-direction:column;
+	margin-top:5px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+.burger1, .burger2, .burger3{
+	margin-top:5px;
+	height:2px;
+	width:20px;
+   background-color:black;
+}
+/*This one if for the hamburger menu*/
+
+
+
+
+
+
+
+
+
+
+/*responsive*/
+@media screen and (max-width:750px;){
+	body{
+		background:red;
+	}
+}
