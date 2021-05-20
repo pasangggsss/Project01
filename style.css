@@ -7,13 +7,13 @@ body{
 	background-attachment:fixed;
 	background-size:cover;
 	background-image: linear-gradient(white 30%,#22E8F9);
-	overflow:hidden;
+	
 }	
 
 ul {                                            /*This one is for the navigation bar.*/
 	display: inline-block;                       
 	float:right;  
-	margin-top:-15px;                                
+	margin-top:-34px;                                
 	padding-top:10px;
 
 }
@@ -56,9 +56,31 @@ ul .active a{
 .phuto{
 	height:150px;
 	width: 150px;
-	margin-top: 100px;
+	margin-top: 130px;
 	margin-left:111px;
 	clip-path:circle();
+
+}
+
+.phuto:hover{
+	transform:scale3d(2,2,2);
+
+}
+
+.kkk{
+	position:relative;
+	animation-name:animate;
+	animation-duration:10s;
+	animation-iteration-count:1;
+
+	}
+
+@keyframes animate{
+	0% { left:0px; top:0px;}
+   25%{ left:0px; top:75px;}
+   50%{left:100px; top:90px;}
+   75%{left:100px; top:0px;}
+   100%{left:0px; top:0px;}
 }
 
 /*The End for home page*/
@@ -73,7 +95,27 @@ ul .active a{
 
 
 /*The start of Portfolio page*/
+.placeholder{
+	display:grid;
+	grid-template-columns:auto auto auto;
+	grid-gap:100px;
+	margin-left:20px;
+	margin-top:30px;
 
+}
+.pin{
+	text-align:center;
+
+}
+.gg{
+	text-align:center;
+
+}
+
+.hh{
+    text-align:center;  
+
+}
 
 
 
@@ -111,7 +153,7 @@ ul .active a{
 	display:grid;
 	grid-template-columns:auto auto ;
 	margin-top:60px;
-	margin-left:70px;
+	margin-left:1px;
 	margin-right:30px;
 	grid-gap:10px;
 } 
@@ -144,15 +186,17 @@ ul .active a{
 .pkh{                /*This one is for Skills*/
 	height:111px;
 	margin-top:10px;
-	margin-left:70px;
-	margin-right:30px;
+    margin-left:1px;
+    margin-right:30px;
 	border:2px solid black;
 	display:flex;
 }
- .range{
- 	margin-top:50px;
- 	margin-left:50px;
- 	float:left;
+.pkh h3{                      /*this one is for the text Skills Detail*/
+	margin-top:40px;
+}
+ .range{                    /*this one is for the range slider of HTML and CSS*/
+ 	margin-top:35px;
+ 	padding-left:5px;
  }
 
 
@@ -248,7 +292,7 @@ ul .active a{
 
 
 /*responsive*/
-@media screen and (max-width:750px;){
+@media screen and (max-width:500px;){
 	body{
 		background:red;
 	}
