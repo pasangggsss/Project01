@@ -35,7 +35,6 @@ body{
 /*the start of home page.*/
 
 .lin{
-	margin-left:94px;
 	font-size:30px;
 }
 .aaa{                   /*for the text student in home page*/
@@ -47,7 +46,6 @@ body{
 .phuto{
 	height:150px;
 	width: 150px;
-	margin-top: 130px;
 	margin-left:85px;
 	clip-path:circle();
 
@@ -59,10 +57,12 @@ body{
 }
 
 .kkk{
+	margin-top:20px;
 	position:relative;
 	animation-name:animate;
 	animation-duration:10s;
 	animation-iteration-count:1;
+	margin-left:25%;
 
 	}
 
@@ -303,7 +303,7 @@ body{
 			float:left;
 			height:fit-content;
 			background-color:black;
-		}
+			}
 	  
 	
 
