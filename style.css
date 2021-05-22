@@ -9,35 +9,26 @@ body{
 	background-image: linear-gradient(white 30%,#22E8F9);
 	
 }	
+.menu {                                 /*This one is for the navigation bar.*/
 
-ul {                                            /*This one is for the navigation bar.*/
-	display: inline-block;                       
-	float:right;  
-	margin-top:-34px;                                
-	padding-top:10px;
+	float:right ;
+	margin-top:0px;                                
+	transition:0.5s;
 
 }
-
-ul a{
+.menu a{
 	background-color:white;
 	text-decoration: none;
 	color:black;
 	padding-left: 20px;
 	padding-right:25px;	
-	transition:1s ease;
 }
 
-ul a:hover{
-	color: blue;
+.menu a:hover{
+	color: red;
 }
 
-ul .active a{
-	background-color: white ;
-	color: black;
-}
-.fin{
-	margin-left:40px;
-}
+
 /* all pages CSS*/
 
 
@@ -211,41 +202,6 @@ ul .active a{
 
 
 
- /* the CSS for  bio starts.*/
- table{             /* for table inside the bio*/
-      margin-top:150px;
-      margin-left:390px;
-      border:3px solid black;
-      box-shadow:15px 15px;
-      padding-top:20px;
-      padding-bottom:20px;
-      padding-left:10px;
-      padding-right:80px;
- }
- tr,td{                                   
-        border:2px solid black;
-
- }
- .fff{
- 	height:150px;
- 	width:150px;
- 	float:left;
- 	margin-top:-490px;
- 	margin-left:740px;
- 	clip-path:circle();
-
- }
-
- /*CSS for bio ends*/
-
-
-
-
-
-
-
-
-
 /*The start of site report*/
 
 
@@ -266,21 +222,22 @@ ul .active a{
 
 
 
-/*This one if for the hamburger menu*/
+/*This one is for the hamburger menu*/
+.checkbox-toggle{
+	opacity:0;
+}
 .burger{                               
 	display:flex;
 	flex-direction:column;
-	margin-top:5px;
-	padding-left: 30px;
-	padding-top: 30px;
+	opacity:0;
 }
 .burger1, .burger2, .burger3{
-	margin-top:5px;
-	height:2px;
-	width:20px;
+	margin-top:8px;
+	height:5px;
+	width:40px;
    background-color:black;
 }
-/*This one if for the hamburger menu*/
+/*This one is for the hamburger menu*/
 
 
 
@@ -292,8 +249,47 @@ ul .active a{
 
 
 /*responsive*/
-@media screen and (max-width:500px;){
-	body{
-		background:red;
-	}
+@media screen and (max-width:500px){
+	  
+		.checkbox-toggle {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  z-index: 2;
+		  cursor: pointer;
+		  width: 60px;
+		  height:60px;
+		  opacity: 0;
+		}
+		
+		.burger{
+		  top: 0;
+		  left: 0;
+		  z-index:1;
+		  width: 40px;
+		  height:50px;
+		  padding: .5em 1em;
+		  background-color:white;
+		  border-radius: 1px;
+		  cursor: pointer;
+		  opacity:100;
+		}
+		
+		
+		.menu {
+			transform: scale(0);
+			float:left;
+		}
+	  
+	
+
+	  .menu a{
+		  display:block;
+	  }
+
+	  .checkbox-toggle:checked~.menu{
+		  transform:scale(1);
+
+	  }
+	
 }
