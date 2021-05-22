@@ -25,7 +25,7 @@ body{
 }
 
 .menu a:hover{
-	color: red;
+	color:red;
 }
 
 
@@ -48,7 +48,7 @@ body{
 	height:150px;
 	width: 150px;
 	margin-top: 130px;
-	margin-left:111px;
+	margin-left:85px;
 	clip-path:circle();
 
 }
@@ -69,8 +69,8 @@ body{
 @keyframes animate{
 	0% { left:0px; top:0px;}
    25%{ left:0px; top:75px;}
-   50%{left:100px; top:90px;}
-   75%{left:100px; top:0px;}
+   50%{left:40px; top:90px;}
+   75%{left:40px; top:0px;}
    100%{left:0px; top:0px;}
 }
 
@@ -118,18 +118,17 @@ body{
 /*The start of Contact page*/
 .insane{                                     /**/
 	float:left;
-	width:300px;
+	width:39%;
 	margin-top:70px;
 	margin-left: 30px; 
 }
-.photo1{                                       /* This one is for photo inside the contact.html page.*/
-	height:400px;
-	width:360px;
-	margin-top: 120px;
-	margin-left: 500px;
-	padding:30px;
-	opacity:65%;
 
+.sane{
+	float:left;
+	clear:both;
+	margin-left:30px;
+	width:39%;
+	margin-top:10px;
 }
 /*The END of contact page*/
 
@@ -250,8 +249,31 @@ body{
 
 /*responsive*/
 @media screen and (max-width:500px){
+     .phuto{                       /*This one is for the photo in home page in responsive view.*/
+		 margin:0;
+		 margin-top:100px;
+	 }
+
+
+	.sane{                           /*This one is for contact in CONTACT page in reponsive view.*/
+		margin:0;
+		width:100%;
+		margin-top:5px;
+		margin-left:130px;
+	}
 	  
-		.checkbox-toggle {
+	 .placeholder{                                           /*This one is for placeholder in responsive view*/        
+		display:grid;
+		grid-template-columns:auto;
+	}
+
+	.pkh{                                              /*This is is for the skills in CV in responsive view*/
+		margin:0;
+		margin-top:10px;
+		margin-left:100px;
+		width:100%;
+	}
+		.checkbox-toggle {                                 /*this one is for checkbox*/
 		  position: fixed;
 		  top: 0;
 		  left: 0;
@@ -262,7 +284,7 @@ body{
 		  opacity: 0;
 		}
 		
-		.burger{
+		.burger{                                             /*This one is for burger bars*/
 		  top: 0;
 		  left: 0;
 		  z-index:1;
@@ -276,9 +298,11 @@ body{
 		}
 		
 		
-		.menu {
+		.menu {                       
 			transform: scale(0);
 			float:left;
+			height:fit-content;
+			background-color:black;
 		}
 	  
 	
