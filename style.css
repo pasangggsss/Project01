@@ -47,7 +47,7 @@ body{
 	height:150px;
 	width: 150px;
 	margin-left:85px;
-	clip-path:circle();
+	border-radius:70px ;
 
 }
 
@@ -201,15 +201,48 @@ body{
 
 
 
-/*The start of site report*/
+/*The start of  CSS for report*/
+.report{
+	
+	margin:0;
+	margin-top:30px;
+	margin-left:30px;
+	margin-right:30px;
+}
+.report h1{
+	font-size:40px;
+	text-align:center;
+}
+
+.rep{
+	padding:0;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.ort{
+	display:grid;
+	grid-template-columns:auto auto;
+}
+
+.image1{
+	height:260px;
+	width:360px;
+}
+
+.uuu{
+	display:grid;
+	grid-template-columns:auto auto  ;
+}
+.uur{
+	display:grid;
+	grid-template-columns:auto auto;
+}
 
 
 
 
-
-
-
-/*The End of site report*/
+/*The End of CSS for report*/
 
 
 
@@ -273,6 +306,23 @@ body{
 		margin-left:100px;
 		width:100%;
 	}
+	.ort{
+		display:grid;
+		grid-template-columns:auto;
+
+	}
+	.uuu{
+		display:grid;
+		grid-template-columns:auto;
+
+
+	}
+	.uur{
+		display:grid;
+		grid-template-columns:auto;
+
+
+	}
 		.checkbox-toggle {                                 /*this one is for checkbox*/
 		  position: fixed;
 		  top: 0;
@@ -294,7 +344,7 @@ body{
 		  background-color:white;
 		  border-radius: 1px;
 		  cursor: pointer;
-		  opacity:100;
+		  opacity:1;
 		}
 		
 		
